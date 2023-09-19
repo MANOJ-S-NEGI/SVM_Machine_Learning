@@ -83,11 +83,17 @@ let's say the hypotenuse is the distance (d) and convert it into a unit vector  
 ---
 so if we expand d = (w'p1) / ||w|| we will get the algebric expression
 
-||w||||p||cos
+**||w|| ||p|| cosθ**
 
+- if we replace the θ(theta) between 0-90 (zero to 90) degrees the value we get is always positive
+- the value will be ranging between 0 to 1
+  
+  ![CamScanner 09-20-2023 01 37](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/7b9e278a-e414-4106-be84-4db7be4fb8db)
 
-
-
-
+  - if any point lies at angle less than 90 degrees and greater than 0 (zero) then it is positive so we can say that values p1 is positive while above 90 degrees p2 is negative.
+ 
+  ---
+  ---
+  
 
 
