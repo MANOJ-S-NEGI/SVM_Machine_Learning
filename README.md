@@ -165,7 +165,15 @@ the cost function will be: min (w,b)
 where
 - Ci ∑<sup>w</sup><sub>i=1</sub> ζi is called Hinge Loss.
 - ζi (zeta) is the submission of the distance of the incorrect data point from the marginal plane
-   i.e. distance between best-fit line and marginal plane.
-- ci is how many points we can ignore for misclassification.
+   i.e. distance between the best-fit line and the marginal plane.
+- ci is how many points we can ignore for misclassification. (datapoints inside the marginal plane as shown in the figure)
+
+![download_svm 2](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/8135b235-1b5f-4c38-9ccd-a0b97074cf48)
+
+That is how the SVC works.
+
+---
+---
+# Support Vector Regression 
 
 
