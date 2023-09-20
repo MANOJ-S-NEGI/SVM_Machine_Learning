@@ -171,7 +171,10 @@ where
 
 ![download_svm 2](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/8135b235-1b5f-4c38-9ccd-a0b97074cf48)
 
-That is how the SVC works.
+
+
+![downloadsvm 3d](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/cc005a43-f357-435d-8d8f-451840427e82)
+
 
 ---
 ---
@@ -212,4 +215,27 @@ w and b are the weights and bias of the hyperplane, respectively.
 ---
 ---
 
-One of the key components of an SVM is the kernel function. The kernel function allows SVMs to operate in a high-dimensional feature space without explicitly calculating the coordinates of the data points in that space, which can be computationally expensive
+# SVM Kernel
+
+- One of the key components of an SVM is the kernel function.
+-  The kernel function allows SVMs to operate in a high-dimensional feature space without explicitly calculating the coordinates of the data points in that space, which can be computationally expensive.
+
+  ## Types of Kernel 
+- Polynomial Kernel:
+      - The polynomial kernel computes the dot product, but with an additional user-defined degree and optional coefficient. It allows for non-linear separation of data.
+
+![download1d](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/177fef77-14ec-44fc-8ab7-8e4809024153)
+
+  
+
+- Radial Basis Function (RBF) Kernel:
+      - The RBF kernel is very popular. It considers all possible polynomials of all degrees and infinite dimensions. It is suitable for cases where the decision boundary is not easily represented by a straight line or a plane.
+
+![svm 2d](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/40faed46-1e8c-4645-8dee-d4906d5da0d2)
+
+
+
+- Sigmoid Kernel:
+    - The sigmoid kernel is based on the hyperbolic tangent function. It's suitable for neural networks and other non-linear models, but it's not as commonly used in SVMs.
+
+
