@@ -2,7 +2,8 @@
 ---
 ---
 # Support vector Machine
-Support Vector Machines (SVMs) are a type of supervised machine learning algorithm used for both regression and classification tasks.
+Support Vector Machines (SVMs) are a type of supervised machine learning algorithm used for both regression and classification tasks and outlier detection.
+It works by finding a hyperplane in a high-dimensional feature space that best separates classes.
 
 
 1.   SVC [Support Vector Problem]
@@ -174,6 +175,41 @@ That is how the SVC works.
 
 ---
 ---
+
 # Support Vector Regression 
 
+- In Support Vector Regression (SVR), the goal is to find a hyperplane that minimizes the error while still staying within a certain margin of tolerance (epsilon). This involves considering the distance of data points from the best-fit line (or hyperplane) as well as the distance from the marginal plane.
 
+**The cost function for SVR typically includes two main components:**
+
+- Loss Function for Fitting Data:
+    - This term measures the error between the predicted output and the actual output for each data point. Common loss functions used in SVR include the epsilon-insensitive loss or the squared loss.
+Regularization Term:
+
+This term is added to the loss function to prevent overfitting. It penalizes the complexity of the model. It is typically proportional to the magnitude of the weights (parameters) in the model.
+
+
+
+```
+Putting it together, the cost function for SVR can be written as:
+
+Min(w,b)  ∥w∥ / 2 + C * ∑ ζi  
+ 
+constraint:
+ 
+Min(w,b) |"y-hat" - y|  ≤ ε + ζi    
+
+where,
+
+w and b are the weights and bias of the hyperplane, respectively.
+ϵ is a parameter that determines the size of the margin (ε  is the epsilon the  distance between the best-fit and marginal plane (gap in marginal error))
+|"y-hat" - y| is the absolute predicted output sub  y, the actual output 
+ ζi distance of the point from the marginal plane (error above margin)
+    
+```
+
+![download_svmepsiolon](https://github.com/MANOJ-S-NEGI/SVM_Machine_Learning/assets/99602627/678133cb-caeb-40dd-bce4-defb2fd36f13)
+---
+---
+
+One of the key components of an SVM is the kernel function. The kernel function allows SVMs to operate in a high-dimensional feature space without explicitly calculating the coordinates of the data points in that space, which can be computationally expensive
