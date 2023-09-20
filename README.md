@@ -18,7 +18,7 @@ It works by finding a hyperplane in a high-dimensional feature space that best s
 
 
 ## How the actually be done :
-to understand the concept we need to look into basic alzebric equation.
+to understand the concept we need to look into basic algebraic equation.
 
 **Equation of line (Slope Intercept Form)**
 
@@ -194,19 +194,22 @@ This term is added to the loss function to prevent overfitting. It penalizes the
 
 
 ```
+
 Putting it together, the cost function for SVR can be written as:
 
 Min(w,b)  ∥w∥ / 2 + C * ∑ ζi  
  
 constraint:
  
-Min(w,b) |"y-hat" - y|  ≤ ε + ζi    
+Min(w,b) |Ŷi  - Yi|  ≤ ε + ζi    
 
 where,
 
 w and b are the weights and bias of the hyperplane, respectively.
+
 ϵ is a parameter that determines the size of the margin (ε  is the epsilon the  distance between the best-fit and marginal plane (gap in marginal error))
-|"y-hat" - y| is the absolute predicted output sub  y, the actual output 
+
+Ŷi is the absolute predicted output sub  y, the actual output 
  ζi distance of the point from the marginal plane (error above margin)
     
 ```
