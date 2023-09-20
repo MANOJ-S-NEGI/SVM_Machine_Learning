@@ -149,9 +149,9 @@ we will get the algebraic expression
 so, my cost function will be maximum (w,b) 2 / ||w||  to get the max dis between the marginal plain
 
 if we get the distance  2 / ||w|| we will be able to make marginal plane 
- - along the margin, we will add constraints if  **w'x + b  >= 1** our value will be positive.
+ - along the margin, we will add constraints if  **w'x + b  ≥ 1** our value will be positive.
    ```
-constraints : Truth Points -> y_prediction *  **w'x + b  >= 1
+constraints : Truth Points -> y_prediction *  **w'x + b  ≥ 1
    ```
 
 similarly,
